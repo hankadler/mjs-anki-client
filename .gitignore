@@ -1,0 +1,12 @@
+# exclude
+*
+
+# include
+!.gitignore
+!index.html
+!.eslintrc.json
+!package.json
+!package-lock.json
+!App.jsx
+!index.jsx
+!README.md
