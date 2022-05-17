@@ -1,0 +1,53 @@
+@import "./variables.css";
+
+.DeckPanel {
+  display: grid;
+
+  min-height: var(--panel-height);
+}
+
+.DeckPanel h4 {
+  display: grid;
+  align-content: end;
+
+  margin: 0 auto .25em auto;
+
+  width: 100%;
+}
+
+.ImageContainer {
+  position: relative;
+
+  border: 1px solid darkgray;
+  border-radius: .25em;
+
+  width: var(--tile-size);
+  height: var(--tile-size-large);
+
+  color: transparent;
+  background-color: white;
+}
+
+.Image {
+  position: absolute;
+
+  width: var(--tile-size);
+  height: var(--tile-size-large);
+}
+
+.ImageEditButton {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  margin: 1px;
+  border-radius: 0 .5em 0 0;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.ImageEditButton img {
+  display: grid;
+}
+
+.displayNone {
+  display: none;
+}

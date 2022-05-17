@@ -16,6 +16,9 @@
     "no-console": "off",
     "comma-dangle": "off",
     "no-underscore-dangle": "off",
-    "quotes": ["error", "double"]
+    "quotes": ["error", "double"],
+    "object-curly-newline": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react-hooks/exhaustive-deps": "warn"
   }
 }

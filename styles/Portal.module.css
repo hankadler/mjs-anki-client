@@ -1,0 +1,13 @@
+.Portal {
+  margin: 0 auto 0 auto;
+  width: fit-content;
+  transform: scale(1.125);
+  transform-origin: 0 0;
+}
+
+.Main {
+  border-radius: .5em;
+  padding: 1em;
+  width: fit-content;
+  background-color: aliceblue;
+}

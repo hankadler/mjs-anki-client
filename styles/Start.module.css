@@ -1,0 +1,75 @@
+@import "./variables.css";
+
+.Start {
+  margin: 0 auto 0 auto;
+  max-width: 67em;
+  text-align: center;
+}
+
+.Header {
+  border-radius: .5em .5em 0 0;
+  padding: .25em;
+
+  color: var(--active-fg);
+  background-color: var(--active-bg);
+}
+
+.Title {}
+
+.Main {
+  border: 1px solid dimgray;
+  border-radius: 0 0 .5em .5em;
+}
+
+.Main button {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.QuestionBox, .AnswerBox {
+  display: grid;
+  align-content: center;
+  margin: 1em 1em 0 1em;
+  border-radius: .5em;
+  min-height: calc(var(--tile-size) * 0.5);
+  color: dimgray;
+}
+
+.QuestionBox pre, .AnswerBox pre {
+  font-family: var(--head-font);
+  font-size: 1.125em;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.ShowButton, .EndButton {
+  margin: .5em!important;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: center;
+}
+
+.NavBar button {
+  margin: .5em;
+  background-color: transparent;
+}
+
+.Footer {
+  padding: .5em;
+  color: dimgray;
+}
+
+.EndBox {
+  display: grid;
+  grid-gap: 1em;
+  margin: 1em;
+}
+
+.EndImageBox, .EndButtonBox { }
+
+.EndButton {
+  border: none;
+  background-color: transparent;
+}

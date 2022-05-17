@@ -1,0 +1,40 @@
+.Card {
+  display: grid;
+  grid-gap: 0.5em;
+}
+
+.CloseButtonDiv {
+  display: grid;
+  justify-content: right;
+  margin: 0;
+  padding: 0;
+}
+
+.CloseButton {
+  display: grid;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.25em;
+  color: darkgray;
+}
+
+.CloseButton:hover {
+  background-color: indianred;
+}
+
+.Card label {
+  display: grid;
+  grid-gap: 0.25em;
+}
+
+.Card textarea {
+  height: 6em;
+  white-space: pre-wrap;
+}
+
+.AnswerDisplayButton {
+  margin: .25em auto;
+}

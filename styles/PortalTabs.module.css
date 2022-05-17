@@ -1,0 +1,31 @@
+@import "./variables.css";
+
+.PortalTabs {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.Tab {
+  border: none;
+  padding: 1em;
+  color: var(--inactive-fg);
+  background-color: var(--inactive-bg);
+}
+
+.leftTab {
+  border-radius: .5em 0 0 .5em;
+}
+
+.rightTab {
+  border-radius: 0 .5em .5em 0;
+}
+
+.Tab:disabled {
+  font-weight: bold;
+  color: var(--active-fg);
+  background-color: var(--active-bg);
+}
+
+.Tab:hover {
+  box-shadow: none;
+}

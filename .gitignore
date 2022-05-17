@@ -2,11 +2,26 @@
 *
 
 # include
+!assets
+!assets/*
+!components
+!components/*
+!contexts
+!contexts/*
+!errors
+!errors/*
+!hooks
+!hooks/*
+!styles
+!styles/*
+!utils
+!utils/*
 !.gitignore
 !index.html
 !.eslintrc.json
 !package.json
 !package-lock.json
 !App.jsx
+!config.js
 !index.jsx
 !README.md

@@ -1,0 +1,15 @@
+.SortBy {
+  margin: 1em 0 1em 0;
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(100%));
+  justify-content: right;
+  align-items: center;
+  font-size: .9em;
+}
+
+.SortBy select {
+  margin-left: .25em;
+  padding: .25em;
+  border: 1px solid dimgray;
+  border-radius: .25em;
+}

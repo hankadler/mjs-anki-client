@@ -1,0 +1,13 @@
+.SignUpNotice {
+  display: grid;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.SignUpNotice * {
+  margin-bottom: .25em;
+}
+
+.Email {
+  color: #069;
+}

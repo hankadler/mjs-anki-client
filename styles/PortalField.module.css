@@ -1,0 +1,5 @@
+.PortalField {
+  font-size: .8em;
+  display: grid;
+  grid-template-columns: fit-content(100%);
+}

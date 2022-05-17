@@ -1,0 +1,30 @@
+.PortalForm {
+  border-top: 1px solid lightblue;
+  border-bottom: 1px solid lightblue;
+  display: grid;
+  grid-gap: .25em;
+  padding-top: 1em;
+}
+
+.AfterPassword {
+  height: 4em;
+}
+
+.link {
+  background: none!important;
+  border: none;
+  font-weight: normal;
+  padding: 0!important;
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.link:hover {
+  box-shadow: none;
+}
+
+.link:disabled {
+  color: dimgrey;
+  cursor: auto;
+}

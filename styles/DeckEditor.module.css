@@ -1,0 +1,119 @@
+@import "./variables.css";
+
+.Overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  overflow: auto;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.25);
+}
+
+.Window {
+  margin: 4em auto;
+  border: none;
+  border-radius: .25em;
+
+  min-width: 720px;
+  max-width: fit-content;
+
+  background-color: whitesmoke;
+}
+
+.TitleBar {
+  display: grid;
+  grid-template-columns: 1fr fit-content(100%);
+
+  border: 1px solid black;
+  border-radius: .25em .25em 0 0;
+
+  height: fit-content;
+
+  background-color: var(--active-bg);
+  color: var(--active-fg);
+}
+
+.Title {
+  display: grid;
+  align-content: center;
+
+  margin-left: .25em;
+}
+
+.CloseButtonTop {
+  border: none;
+  border-radius: 0 .25em 0 0;
+  padding: .25em;
+
+  width: 2em;
+  height: 2em;
+
+  font-family: "Noto Sans Mono", monospace;
+
+  background-color: transparent;
+  color: var(--active-fg);
+}
+
+.CloseButtonTop:hover {
+  background-color: indianred;
+  color: white;
+}
+
+.Main {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 1em 1em 0 1em;
+}
+
+.SelectedTab {
+  border: 1px solid dimgray;
+  border-bottom: none;
+  background-color: var(--active-bg)!important;
+  color: var(--active-fg)!important;
+}
+
+.SelectedTab:first-of-type {
+  border-radius: .25em 0 0 0;
+}
+
+.SelectedTab:last-of-type {
+  border-radius:  0 .25em 0 0;
+}
+
+.SelectedTab:focus:after {
+  background: transparent!important;
+}
+
+.Footer {
+  display: grid;
+  justify-items: center;
+
+  border: 1px solid black;
+  border-top: none;
+  border-radius: 0 0 .25em .25em;
+  padding: .5em;
+}
+
+.Submit {
+  border: none;
+  border-radius: .25em;
+  padding: .5em;
+
+  width: fit-content;
+
+  font-weight: bold;
+
+  background-color: mediumblue;
+  color: white;
+}
+
+.Submit:hover {
+  filter: brightness(150%);
+}

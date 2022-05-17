@@ -1,0 +1,21 @@
+@import "./variables.css";
+
+.Error {
+  text-align: center;
+  width: fit-content;
+  margin: 8em auto 0 auto;
+}
+
+.code {
+  font-size: var(--big-font-size);
+  color: white;
+  background-color: indianred;
+  border-radius: .25em;
+  padding: .1em;
+  margin: 0 auto .1em auto;
+  width: fit-content;
+}
+
+.message {
+  font-size: 2em;
+}

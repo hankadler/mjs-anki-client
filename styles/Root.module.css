@@ -1,0 +1,119 @@
+@import "./variables.css";
+
+body {
+  min-width: 360px;
+}
+
+body, body * {
+  margin: 0;
+  font-family: var(--body-font);
+}
+
+select {
+  background-color: whitesmoke;
+}
+
+label {
+  font-family: var(--label-font);
+}
+
+button {
+  border: none;
+  border-radius: .5em;
+  padding: .5em;
+  font-family: var(--head-font);
+  color: var(--active-fg);
+  background-color: var(--active-bg);
+}
+
+button:hover {
+  filter: brightness(150%);
+}
+
+button:disabled {
+  color: var(--inactive-fg);
+  background-color: var(--inactive-bg);
+}
+
+button:disabled:hover {
+  pointer-events: none;
+}
+
+select:hover, button:hover {
+  box-shadow: var(--hover-shadow);
+}
+
+select:disabled:hover, button:disabled:hover {
+  box-shadow: none;
+}
+
+.Root {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  padding-top: .25em;
+  height: 95%;
+  background-color: white;
+}
+
+.Header button {
+  margin: .5em;
+  border-radius: .5em;
+  padding: .5em;
+  background-color: transparent;
+}
+
+.Header button:disabled {
+  display: none;
+}
+
+.Main {
+  margin: 1em auto 1em auto;
+  width: 98%;
+}
+
+.Footer {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: fit-content;
+  font-family: var(--label-font);
+  font-weight: lighter;
+  transition: all linear;
+}
+
+.Footer * {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: .25em;
+  align-content: center;
+  justify-content: left;
+  text-align: left;
+  color: white;
+}
+
+.Footer p {
+  width: 100%;
+  line-height: 2;
+  background-color: dimgray;
+}
+
+.StatusSpan {
+  border-radius: .25em;
+  padding-left: .25em;
+  width: fit-content;
+  font-weight: bold;
+  background-color: mediumblue;
+}
+
+@media (max-width: 720px) {
+  .StatusBar {
+    position: relative;
+  }
+}

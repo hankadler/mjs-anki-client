@@ -1,0 +1,15 @@
+:root {
+  --head-font: "Noto Sans", sans-serif;
+  --body-font: "Noto Serif", serif;
+  --label-font: "Noto Sans Mono", monospace;
+  --tile-size: 16em;
+  --tile-size-large: calc(16em * 1.2);
+  --tile-size-plus: calc(16em * 1.618);
+  --panel-height: 400px;
+  --big-font-size: 8em;
+  --active-fg: white;
+  --active-bg: mediumblue;
+  --inactive-fg: whitesmoke;
+  --inactive-bg: dimgray;
+  --hover-shadow: rgba(0, 0, 0, 0.18) 0 2px 4px;
+}

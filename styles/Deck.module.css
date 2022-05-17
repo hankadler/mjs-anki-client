@@ -1,0 +1,64 @@
+@import "./variables.css";
+
+.Deck {
+  display: grid;
+  grid-template-rows: fit-content(100%) 1fr fit-content(100%);
+  border: 1px solid dimgray;
+  border-radius: .5em;
+  padding: 0;
+  width: var(--tile-size);
+  height: var(--tile-size-plus);
+  /*box-shadow: var(--hover-shadow);*/
+}
+
+.DeckRemoved {
+  display: none;
+}
+
+.Deck:hover {
+  /*box-shadow: var(--hover-shadow);*/
+  box-shadow: dimgray 0 2px 4px;
+}
+
+.ImageContainer {
+  border-radius: .5em .5em 0 0;
+  max-width: var(--tile-size);
+  height: fit-content;
+  background-color: lightgray;
+}
+
+.Image {
+  display: grid;
+  margin: 0 auto;
+  border-radius: .5em .5em 0 0;
+  width: 100%;
+  height: var(--tile-size-large);
+}
+
+.Title {
+  display: grid;
+  align-self: start;
+  padding: .25em;
+  max-height: 85%;
+  text-align: center;
+  overflow: auto;
+}
+
+.ToolBar {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 3em);
+  align-items: end;
+  grid-gap: .5em;
+  padding: .25em;
+}
+
+.Icon {
+  display: grid;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.CardsCount {
+  padding: .25em;
+  color: gray;
+}

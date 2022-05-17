@@ -1,0 +1,21 @@
+@import "./variables.css";
+
+.Banner {
+  margin-bottom: .5em;
+}
+
+.title {
+  color: var(--active-fg);
+  background-color: var(--active-bg);
+  border-radius: .5em;
+  padding: .25em;
+}
+
+.dropCap {
+  font-size: 1.618em;
+}
+
+.subTitle {
+  color: var(--active-bg);
+  padding: .25em;
+}

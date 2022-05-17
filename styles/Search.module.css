@@ -1,0 +1,38 @@
+.Search {
+  border: 1px solid dimgray;
+  border-radius: .25em;
+  max-width: 72em;
+  display: grid;
+  grid-template-columns: fit-content(100%) 1fr fit-content(100%);
+}
+
+.Search * {
+  border: none;
+  padding: .25em;
+  align-items: center;
+}
+
+.Search select {
+  border-radius: .25em 0 0 .25em;
+  width: fit-content;
+  text-align: right;
+}
+
+.Search input:focus {
+  outline: none;
+}
+
+.Search button {
+  padding: .5em;
+  border-radius: 0 .25em .25em 0;
+  /*color: initial;*/
+  background-color: transparent;
+}
+
+.Search button:disabled {
+  visibility: hidden;
+}
+
+.Search img {
+  display: grid;
+}
