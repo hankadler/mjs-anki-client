@@ -1,0 +1,5 @@
+{
+  "/anki/v1": {
+    "target": "http://localhost:3000"
+  }
+}

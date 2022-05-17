@@ -16,12 +16,13 @@
 !styles/*
 !utils
 !utils/*
-!.gitignore
-!index.html
 !.eslintrc.json
-!package.json
-!package-lock.json
+!.gitignore
+!.proxyrc.json
 !App.jsx
 !config.js
+!index.html
 !index.jsx
+!package.json
+!package-lock.json
 !README.md
