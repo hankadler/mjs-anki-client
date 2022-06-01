@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import css from "../styles/SignUpNotice.module.css";
+import * as css from "../styles/SignUpNotice.module.css";
 import shieldImage from "../assets/shield.png";
 
 const propTypes = {

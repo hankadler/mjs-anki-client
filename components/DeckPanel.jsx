@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import css from "../styles/DeckPanel.module.css";
+import * as css from "../styles/DeckPanel.module.css";
 import editIcon from "../assets/edit.png";
 import { toBase64 } from "../utils/helpers";
 

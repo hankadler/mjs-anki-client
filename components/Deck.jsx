@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
-import css from "../styles/Deck.module.css";
+import * as css from "../styles/Deck.module.css";
 import deleteIcon from "../assets/delete.png";
 import editIcon from "../assets/edit.png";
 import startIcon from "../assets/start.png";

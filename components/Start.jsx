@@ -2,7 +2,7 @@ import "animate.css";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
-import css from "../styles/Start.module.css";
+import * as css from "../styles/Start.module.css";
 import checkIcon from "../assets/check.png";
 import repeatIcon from "../assets/repeat.png";
 import backIcon from "../assets/back.svg";

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-import css from "../styles/Error.module.css";
+import * as css from "../styles/Error.module.css";
 import backImg from "../assets/back.svg";
 
 const propTypes = {

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import css from "../styles/SortBy.module.css";
+import * as css from "../styles/SortBy.module.css";
 
 const propTypes = {
   query: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number])).isRequired,

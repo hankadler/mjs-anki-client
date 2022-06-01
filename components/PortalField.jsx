@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import css from "../styles/PortalField.module.css";
+import * as css from "../styles/PortalField.module.css";
 
 const propTypes = {
   id: PropTypes.string.isRequired,

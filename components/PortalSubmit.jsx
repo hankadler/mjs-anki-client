@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
-import css from "../styles/PortalSubmit.module.css";
+import * as css from "../styles/PortalSubmit.module.css";
 import useApp from "../hooks/useApp";
 import { POST } from "../utils/api";
 

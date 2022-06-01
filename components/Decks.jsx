@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import addIcon from "../assets/add.png";
-import css from "../styles/Decks.module.css";
+import * as css from "../styles/Decks.module.css";
 import useApp from "../hooks/useApp";
 import { GET } from "../utils/api";
 import { querify } from "../utils/helpers";

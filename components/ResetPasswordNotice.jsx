@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import css from "../styles/ResetPasswordNotice.module.css";
+import * as css from "../styles/ResetPasswordNotice.module.css";
 import keyImage from "../assets/key.png";
 
 const propTypes = {

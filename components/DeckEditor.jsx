@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import css from "../styles/DeckEditor.module.css";
+import * as css from "../styles/DeckEditor.module.css";
 import useApp from "../hooks/useApp";
 import DeckPanel from "./DeckPanel";
 import CardsPanel from "./CardsPanel";

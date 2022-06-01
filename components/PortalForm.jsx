@@ -2,7 +2,7 @@ import { useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import validator from "validator";
 import { useNavigate } from "react-router-dom";
-import css from "../styles/PortalForm.module.css";
+import * as css from "../styles/PortalForm.module.css";
 import PortalField from "./PortalField";
 
 const propTypes = {

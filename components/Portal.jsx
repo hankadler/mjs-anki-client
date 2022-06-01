@@ -1,5 +1,5 @@
 import { useState } from "react";
-import css from "../styles/Portal.module.css";
+import * as css from "../styles/Portal.module.css";
 import Banner from "./Banner";
 import PortalTabs from "./PortalTabs";
 import PortalForm from "./PortalForm";

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import css from "../styles/Search.module.css";
+import * as css from "../styles/Search.module.css";
 import searchIcon from "../assets/search.png";
 import clearIcon from "../assets/clear.png";
 

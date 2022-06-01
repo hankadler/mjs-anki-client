@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-import css from "../styles/PortalTabs.module.css";
+import * as css from "../styles/PortalTabs.module.css";
 
 const propTypes = {
   activeTabIndex: PropTypes.oneOf([0, 1]).isRequired,

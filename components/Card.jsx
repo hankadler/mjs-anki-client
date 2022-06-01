@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import showIcon from "../assets/show.png";
 import hideIcon from "../assets/hide.png";
-import css from "../styles/Card.module.css";
+import * as css from "../styles/Card.module.css";
 
 const propTypes = {
   question: PropTypes.string.isRequired,

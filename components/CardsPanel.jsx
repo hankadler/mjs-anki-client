@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-import css from "../styles/CardsPanel.module.css";
+import * as css from "../styles/CardsPanel.module.css";
 import addIcon from "../assets/add.png";
 import removeIcon from "../assets/remove.png";
 import prevIcon from "../assets/prev.png";

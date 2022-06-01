@@ -2,7 +2,7 @@ import "animate.css";
 import { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import ReactTooltip from "react-tooltip";
-import css from "../styles/Root.module.css";
+import * as css from "../styles/Root.module.css";
 import exitIcon from "../assets/exit.png";
 import useApp from "../hooks/useApp";
 import { DELETE } from "../utils/api";
