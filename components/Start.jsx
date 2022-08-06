@@ -37,6 +37,8 @@ export default function Start() {
   // keep cards count
   useEffect(() => setCount(cards.length), [cards]);
 
+  const onClose = async () => navigate("/decks");
+
   const onShow = async () => setAnswered(true);
 
   const onResult = async (event) => {
@@ -57,6 +59,7 @@ export default function Start() {
           <>
             <header className={css.Header}>
               <h3 className={css.Title}>{title}</h3>
+              <button className={css.CloseButton} type="button" onClick={onClose}>&times;</button>
             </header>
             <main className={css.Main}>
               <fieldset className={css.QuestionBox}>

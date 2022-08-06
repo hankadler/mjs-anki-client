@@ -7,14 +7,42 @@
 }
 
 .Header {
+  display: grid;
+  grid-template-columns: 1fr fit-content(100%);
+  grid-gap: .5em;
+  justify-content: center;
+  align-content: center;
   border-radius: .5em .5em 0 0;
-  padding: .25em;
 
   color: var(--active-fg);
   background-color: var(--active-bg);
 }
 
-.Title {}
+.CloseButton {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  border-radius: 0 .5em 0 0;
+  padding: .5em 1em;
+
+  /*width: 2em;*/
+  /*height: 2em;*/
+
+  font-family: "Noto Sans Mono", monospace;
+
+  background-color: transparent;
+  color: var(--active-fg);
+}
+
+.CloseButton:hover {
+  background-color: indianred;
+  color: white;
+}
+
+.Title {
+  padding: .25em;
+}
 
 .Main {
   border: 1px solid dimgray;

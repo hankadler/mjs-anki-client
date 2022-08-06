@@ -33,6 +33,11 @@ function Decks() {
   // refresh decks on search/sort
   useEffect(refreshDecks, [query]);
 
+  // refresh decks on close editor
+  useEffect(() => {
+    if (!editorActive) refreshDecks();
+  }, [editorActive]);
+
   const add = () => {
     setDeckId("");
     setEditorActive(true);
