@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import useApp from "./hooks/useApp";
 import Root from "./components/Root";
 import Portal from "./components/Portal";
@@ -30,7 +30,7 @@ export default function App() {
           {error
             ? <Route path="/error" element={<Error message={error.message} code={error.code} />} />
             : null}
-          <Route path="/*" element={<Error code={404} message="Not Found!" />} />
+          <Route path="*" element={<Navigate to={-1} />} />
         </Route>
       </Routes>
     </BrowserRouter>
