@@ -34,6 +34,8 @@ export default function PortalSubmit({
   }, [password, passwordAgain]);
 
   const onSubmit = async () => {
+    setSubmitDisabled(true);
+    setStatus(activeTabIndex === 0 ? "Signing in..." : "Signing up...");
     const resource = activeTabIndex === 0 ? "signIn" : "signUp";
     const requestBody = { email, password };
     if (resource === "signUp") requestBody.passwordAgain = passwordAgain;
