@@ -38,3 +38,13 @@
 .AnswerDisplayButton {
   margin: .25em auto;
 }
+
+.someHeight {
+  transition: height .5s ease;
+}
+
+.zeroHeight {
+  height: 0!important;
+  resize: none;
+  transition: height .5s ease;
+}

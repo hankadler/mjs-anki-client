@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import showIcon from "../assets/show.png";
 import hideIcon from "../assets/hide.png";
 import * as css from "../styles/Card.module.css";
@@ -13,18 +13,18 @@ const propTypes = {
 
 export default function Card({ question, setQuestion, answer, setAnswer }) {
   const [answerShown, setAnswerShown] = useState(false);
-  const [answerDisplayIcon, setAnswerDisplayIcon] = useState(showIcon);
+  const [resizing, setResizing] = useState(false);
 
-  const changeQuestion = (event) => setQuestion(event.target.value);
+  const changeQuestion = async (event) => setQuestion(event.target.value);
 
-  const changeAnswer = (event) => setAnswer(event.target.value);
+  const changeAnswer = async (event) => setAnswer(event.target.value);
 
-  const toggleAnswerDisplay = () => setAnswerShown(!answerShown);
+  const toggleAnswerDisplay = async () => setAnswerShown(!answerShown);
 
-  useEffect(() => (
-    answerShown ? setAnswerDisplayIcon(hideIcon) : setAnswerDisplayIcon(showIcon)
-  ), [answerShown]);
+  const onMouseDown = async () => setResizing(true);
+  const onMouseUp = async () => setResizing(false);
 
+  /* eslint-disable no-nested-ternary */
   return (
     <div className={css.Card}>
       <label htmlFor="question">
@@ -33,9 +33,21 @@ export default function Card({ question, setQuestion, answer, setAnswer }) {
       </label>
       <label htmlFor="answer">
         <h4>Answer</h4>
-        <textarea id="answer" value={answer} onChange={changeAnswer} />
+        <textarea
+          id="answer"
+          className={resizing ? "" : (answerShown ? css.someHeight : css.zeroHeight)}
+          value={answer}
+          onChange={changeAnswer}
+          onMouseDown={onMouseDown}
+          onMouseUp={onMouseUp}
+        />
         <button className={css.AnswerDisplayButton} type="button" onClick={toggleAnswerDisplay}>
-          <img src={answerDisplayIcon} alt="toggle-answer-display" width="24" height="24" />
+          <img
+            src={answerShown ? hideIcon : showIcon}
+            alt="toggle-answer-display"
+            width="24"
+            height="24"
+          />
         </button>
       </label>
     </div>
